@@ -35,8 +35,6 @@ public class MainActivity extends Activity {
     }
 
     private void init(){
-
-
         AlphaAnimation travle = new AlphaAnimation(0.1f,1.0f);
         travle.setDuration(3000);
         findViewById(R.id.activity_main).startAnimation(travle);
