@@ -36,14 +36,14 @@ public class MainActivity extends Activity {
 
     private void init(){
         AlphaAnimation travle = new AlphaAnimation(0.1f,1.0f);
-        travle.setDuration(3000);
+        travle.setDuration(1000);
         findViewById(R.id.activity_main).startAnimation(travle);
 
         travle.setAnimationListener(new AnimationImpl());
     }
 
     private void enter(){
-        Intent intent = new Intent(this,ShowActivity.class);
+        Intent intent = new Intent(this,LoginActivity.class);
         startActivity(intent);
         finish();
     }
