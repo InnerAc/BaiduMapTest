@@ -35,8 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="邮箱:"
-                android:textSize="20sp"
-                android:id="@+id/label_email" />
+                android:textSize="20sp"/>
 
             <EditText
                 android:layout_width="wrap_content"
@@ -135,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:ems="10"
                 android:id="@+id/nativePlace" />
         </LinearLayout>

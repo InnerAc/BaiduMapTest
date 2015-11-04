@@ -31,11 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ShowActivity"
-            android:label="@string/title_activity_show"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
         <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -49,6 +44,11 @@
         <activity android:name=".LoginActivity" >
         </activity>
         <activity android:name=".RegisterActivity" >
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_info"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

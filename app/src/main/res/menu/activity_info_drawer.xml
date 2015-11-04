@@ -2,20 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_sex" android:icon="@android:drawable/ic_menu_camera"
-            android:title="@string/nav_sex" />
-        <item android:id="@+id/nav_native" android:icon="@android:drawable/ic_menu_gallery"
-            android:title="@string/nav_native" />
-        <item android:id="@+id/nav_birth" android:icon="@android:drawable/ic_menu_slideshow"
-            android:title="@string/nav_birth" />
-        <item android:id="@+id/nav_interest" android:icon="@android:drawable/ic_menu_manage"
-            android:title="@string/nav_interest" />
+        <item android:id="@+id/nav_map_normal" android:icon="@android:drawable/ic_dialog_map"
+            android:title="普通地图" />
+        <item android:id="@+id/nav_map_satellite" android:icon="@android:drawable/ic_menu_compass"
+            android:title="卫星地图" />
+        <item android:id="@+id/nav_map_traffic" android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="交通图" />
+        <item android:id="@+id/nav_map_heat" android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="热力图" />
     </group>
 
-    <item android:title="座右铭">
+    <item android:title="更多功能">
         <menu>
-            <item android:id="@+id/nav_motto" android:icon="@android:drawable/ic_menu_share"
-                android:title="@string/nav_motto" />
+            <item android:id="@+id/nav_other" android:icon="@android:drawable/ic_menu_share"
+                android:title="其他功能" />
+            <item android:id="@+id/nav_logout" android:icon="@android:drawable/ic_menu_revert"
+                android:title="注销" />
         </menu>
     </item>
 

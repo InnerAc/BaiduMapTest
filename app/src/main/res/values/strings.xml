@@ -12,4 +12,14 @@
         For more information, see https://support.google.com/admob/answer/3052638
     <!- -->
     <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="title_activity_info">地图</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_sex">性别</string>
+    <string name="nav_native">籍贯</string>
+    <string name="nav_birth">生日</string>
+    <string name="nav_interest">兴趣</string>
+    <string name="nav_motto">座右铭</string>
 </resources>
