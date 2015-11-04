@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_sex" android:icon="@android:drawable/ic_menu_camera"
+            android:title="@string/nav_sex" />
+        <item android:id="@+id/nav_native" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="@string/nav_native" />
+        <item android:id="@+id/nav_birth" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="@string/nav_birth" />
+        <item android:id="@+id/nav_interest" android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/nav_interest" />
+    </group>
+
+    <item android:title="座右铭">
+        <menu>
+            <item android:id="@+id/nav_motto" android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/nav_motto" />
+        </menu>
+    </item>
+
+</menu>
