@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="interest">
+        <item>运动</item>
+        <item>旅行</item>
+        <item>技术宅</item>
+        <item>竞技</item>
+        <item>其他</item>
+    </string-array>
+</resources>

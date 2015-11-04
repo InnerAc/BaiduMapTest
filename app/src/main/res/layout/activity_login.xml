@@ -30,8 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="邮箱:"
-                android:textSize="20sp"
-                android:id="@+id/label_email" />
+                android:textSize="20sp"/>
 
             <EditText
                 android:layout_width="wrap_content"
@@ -55,7 +54,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="密码:"
-                android:id="@+id/label_pwd"
                 android:textSize="20sp" />
 
             <EditText
@@ -65,6 +63,30 @@
                 android:inputType="textPassword"
                 android:ems="10"
                 android:id="@+id/pwd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存用户名"
+                android:id="@+id/cbSaveUid" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存密码"
+                android:id="@+id/cbSavePwd" />
+
         </LinearLayout>
 
         <LinearLayout
