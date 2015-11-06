@@ -22,6 +22,8 @@ import android.widget.Toast;
 import com.baidumap.innerac.baidumaptest.util.DBLink;
 
 import java.util.Calendar;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -145,11 +147,19 @@ public class RegisterActivity extends AppCompatActivity {
         String db_email = sp.getString(s_email,"null");
 
         if(s_email.equals("")){
-            ans = "邮箱不得为空";
+            ans = "邮箱或用户名不得为空";
             return ans;
         }
+        if(s_email.indexOf("@") != -1){
+            Pattern pattern = Pattern.compile("^([a-z0-9A-Z]+[-|_|\\\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\\\.)+[a-zA-Z]{2,}$");
+            Matcher matcher = pattern.matcher(s_email);
+            if(!matcher.matches()){
+                ans = "邮箱格式非法!!";
+                return ans;
+            }
+        }
         if(!db_email.equals("null")){
-            ans = "该邮箱已存在";
+            ans = "该邮箱或用户名已存在";
             return ans;
         }
         if(s_pwd1.equals("")){
@@ -164,8 +174,8 @@ public class RegisterActivity extends AppCompatActivity {
             ans = "籍贯不得为空";
             return ans;
         }
-        if(s_phone.equals("")){
-            ans="手机不得为空";
+        if(s_phone.equals("") || s_phone.length()!= 11){
+            ans="手机号码不合法!!";
             return ans;
         }
         if(s_interest.equals("")){

@@ -14,8 +14,10 @@
 
     <item android:title="更多功能">
         <menu>
-            <item android:id="@+id/nav_other" android:icon="@android:drawable/ic_menu_share"
-                android:title="其他功能" />
+            <item android:id="@+id/nav_other" android:icon="@android:drawable/ic_menu_search"
+                android:title="城市定位" />
+            <item android:id="@+id/nav_clear" android:icon="@android:drawable/ic_menu_delete"
+                android:title="清除屏幕"/>
             <item android:id="@+id/nav_logout" android:icon="@android:drawable/ic_menu_revert"
                 android:title="注销" />
         </menu>

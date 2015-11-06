@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -28,7 +29,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         init();
     }
 
@@ -61,10 +61,16 @@ public class LoginActivity extends AppCompatActivity {
 
         if(db_uid.equals("null")){
             showToast("用户名或邮箱不存在!!");
+            spEditor.putString("tmp#uid", "");
+            spEditor.putString("tmp#pwd","");
+            spEditor.commit();
             return;
         }
         if(!db_pwd.equals(s_pwd)){
             showToast("密码错误!!");
+            spEditor.putString("tmp#uid", "");
+            spEditor.putString("tmp#pwd","");
+            spEditor.commit();
             return;
         }
 

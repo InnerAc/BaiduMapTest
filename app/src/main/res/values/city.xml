@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="南京">32.064735,118.802891</string>
+    <string name="北京">39.911013,116.413554</string>
+    <string name="上海">31.236305,121.480237</string>
+    <string name="石家庄">38.048684,114.520828</string>
+
+    <string name="NJ">32.064735,118.802891</string>
+    <string name="BJ">39.911013,116.413554</string>
+    <string name="SH">31.236305,121.480237</string>
+    <string name="SJZ">38.048684,114.520828</string>
+</resources>
